@@ -1,0 +1,240 @@
+body {
+    font-size       : 18px;
+    color           : #fff;
+    background-color: #1b1b1b;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size     : 1.5rem;
+    color         : #6797ea;
+    letter-spacing: 0.05rem;
+}
+
+p {
+    margin: 0;
+}
+
+.container {
+    width    : 90%;
+    max-width: 1440px;
+
+    display       : flex;
+    flex-direction: column;
+    margin        : 0 auto;
+}
+
+.heading {
+    display: flex;
+}
+
+.title {
+    font-weight   : 300;
+    letter-spacing: 0.04rem
+}
+
+.box {
+    display: flex;
+}
+
+.comment-box {
+    flex-basis    : 40%;
+    display       : flex;
+    flex-direction: column;
+}
+
+.comment-box__show-comment {
+    display      : flex;
+    margin-bottom: 2rem;
+    align-items  : center;
+
+    user-select: none;
+}
+
+.comment__input {
+    display     : flex;
+    margin-right: 2rem;
+
+    font-size     : 1rem;
+    font-weight   : 300;
+    letter-spacing: 0.04rem
+}
+
+#no {
+    margin-left: 1rem;
+}
+
+input[type="radio"]:checked,
+input[type="radio"]:not(:checked) {
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="radio"]:checked+label,
+input[type="radio"]:not(:checked)+label {
+    display     : inline-block;
+    position    : relative;
+    padding-left: 28px;
+    line-height : 20px;
+    cursor      : pointer;
+}
+
+input[type="radio"]:checked+label:before,
+input[type="radio"]:not(:checked)+label:before {
+    content : "";
+    position: absolute;
+    left    : 0px;
+    top     : 0px;
+    width   : 1rem;
+    height  : 1rem;
+    border  : #6797ea dashed 0.15rem;
+    ;
+    background-color: none;
+}
+
+input[type="radio"]:checked+label:after,
+input[type="radio"]:not(:checked)+label:after {
+    content           : "";
+    position          : absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition   : all 0.2s ease;
+    -o-transition     : all 0.2s ease;
+    transition        : all 0.2s ease;
+}
+
+input[type="radio"]:checked+label:after,
+input[type="radio"]:not(:checked)+label:after {
+    left             : 0.3rem;
+    top              : 0.27rem;
+    width            : 0.5rem;
+    height           : 0.22rem;
+    border-left      : 0.2rem solid #eeeeee;
+    border-bottom    : 0.2rem solid #eeeeee;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform   : rotate(-45deg);
+    -o-transform     : rotate(-45deg);
+    -ms-transform    : rotate(-45deg);
+    transform        : rotate(-45deg);
+}
+
+input[type="checkbox"]:not(:checked)+label:after,
+input[type="radio"]:not(:checked)+label:after {
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked+label:after,
+input[type="radio"]:checked+label:after {
+    opacity: 1;
+}
+
+.chat-box {
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+    padding-left  : 2rem;
+}
+
+.comment-box__input {
+    display: flex;
+}
+
+.input {
+    width: 25rem;
+
+    display   : flex;
+    margin    : 0.5rem 0 2rem 0;
+    padding   : 0.5rem;
+    background: none;
+    border    : #6797ea dashed 2px;
+}
+
+#comment {
+    height: 10rem;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.button {
+    display: flex;
+}
+
+.submit {
+    width  : 9rem;
+    padding: 0.4rem 0.7rem 0.4rem 0.7rem;
+
+    letter-spacing  : 0.05rem;
+    background-color: #6797ea;
+    border          : none;
+}
+
+.chat-window {
+
+    display       : flex;
+    flex-direction: column;
+}
+
+.chat-window__user {
+    width         : 100%;
+    display       : flex;
+    flex-direction: column;
+}
+
+.user {
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.user-left {
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+}
+
+.user-rigth {
+    display    : flex;
+    align-items: center;
+}
+
+.user-name {
+    display     : flex;
+    padding-left: 1rem;
+}
+
+.user-name__name {
+    color      : #6797ea;
+    font-weight: 500;
+}
+
+.user-pic__pic {
+    width       : 7rem;
+    margin-right: 1rem;
+}
+
+.user-comment {
+    display: flex;
+}
+
+.user-comment__comment {
+    width        : 100%;
+    padding      : 1rem 0rem 1rem 0;
+    margin-bottom: 1rem;
+
+    border-bottom: #6797ea dashed 2px;
+}
+
+.user-data {
+    display: flex;
+}
+
+.user-data__time {
+    width: 100%;
+
+    font-weight: 300;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/normalize.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Cервис комментариев</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Сервис комментариев со спам-фильтром</h1>
+        </div>
+        <div class="box">
+            <div class="comment-box">
+                <div class="comment-box__heading">
+                    <h2 class="box__heading">Оставьте ваш комментарий</h2>
+                </div>
+                <div class="comment-box__show-comment">
+                    <p class="comment__input">Показывать ваше имя?</p>
+                    <input type="radio" class="comment__check" name="one" id="yes" checked="checked">
+                    <label for="yes">Yes</label>
+                    <input type="radio" class="comment__check" name="one" id="no">
+                    <label for="no">No</label>
+                </div>
+                <div class="comment-box__title-name">
+                    <p class="title">Введите ваше <span class="bold">Имя</span></p>
+                </div>
+                <div class="comment-box__input-name">
+                    <input id="name" class="input" type="text">
+                </div>
+                <div class="comment-box__title-link">
+                    <p class="title">Введите ссылку <span class="bold">вашего аватара</span></p>
+                </div>
+                <div class="comment-box__input-link">
+                    <input id="link" class="input" type="text">
+                </div>
+                <div class="comment-box__title">
+                    <p class="title">Оставьте комментарий</p>
+                </div>
+                <div class="comment-box__input">
+                    <input id="comment" class="input" type="text">
+                </div>
+                <div class="button">
+                    <button class="submit">Отправить</button>
+                </div>
+            </div>
+            <div class="chat-box">
+                <div class="chat-box__heading">
+                    <h2 class="box__heading">Чат</h2>
+                </div>
+                <div class="chat-window">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
